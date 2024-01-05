@@ -2,28 +2,17 @@
 
 npm i react-paginate
 
+![tyscriptSearch](https://github.com/Msolmaz4/searchPagenetion/assets/86296198/e0f47a37-6826-4cdb-8bbe-c21bd4a61d74)
 
-    "axios": ,
+
+    
+     "axios": ,
     "react": ,
     "react-dom": ,
     "react-hook-form:,
     "react-paginate": ",
     "react-redux"
 
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 ```
 kursSearc

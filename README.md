@@ -2,7 +2,8 @@
 
 npm i react-paginate
 
-![Uploading tyscriptSearch.gif…]()
+![tyscriptSearch](https://github.com/Msolmaz4/searchPagenetion/assets/86296198/e0f47a37-6826-4cdb-8bbe-c21bd4a61d74)
+
 
     
      "axios": ,

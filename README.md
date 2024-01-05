@@ -4,7 +4,6 @@ npm i react-paginate
 
 
     
-    ![tyscriptSearch](https://github.com/Msolmaz4/searchPagenetion/assets/86296198/accab906-8c63-4c7b-9115-1c2b2b83b7c5)
      "axios": ,
     "react": ,
     "react-dom": ,
@@ -27,6 +26,7 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+    ![tyscriptSearch](https://github.com/Msolmaz4/searchPagenetion/assets/86296198/accab906-8c63-4c7b-9115-1c2b2b83b7c5)
 ```
 kursSearc
 ├─ .eslintrc.cjs

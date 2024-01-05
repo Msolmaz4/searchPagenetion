@@ -2,10 +2,17 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { alle } from "../redux/productSlice";
 import { useEffect, useState } from "react";
+interface Product {
+  title: string;
+  price: number;
+  category: string;
+  brand: string;
+ 
+}
 
 const useProduc = () => {
   const dispatch = useDispatch();
-  const [filt, setFilt] = useState([]);
+  const [filt, setFilt] = useState<Product[]>([]);
 
   const [deneme, setDeneme] = useState({
     example: "",

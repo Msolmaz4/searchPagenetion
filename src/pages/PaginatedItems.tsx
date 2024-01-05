@@ -1,9 +1,19 @@
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
 // Example items, to simulate fetching from another resources.
-
-function Items({ currentItems }) {
+interface Product {
+  title: string;
+  price: number;
+  category: string;
+  brand: string;
+  images: string[];
+}
+interface ItemsProps {
+  currentItems: Product[];
+}
+function Items({ currentItems }: ItemsProps) {
  // console.log(currentItems);
   return (
     <>
@@ -27,17 +37,18 @@ function Items({ currentItems }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage }) {
-  const { products } = useSelector((state) => state.products);
+function PaginatedItems({ itemsPerPage }: { itemsPerPage: number }) {
+  const { products } = useSelector((state:RootState) => state.products);
 
   const [itemOffset, setItemOffset] = useState(0);
 
   const endOffset = itemOffset + itemsPerPage;
   // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = products.slice(itemOffset, endOffset);
+  console.log(currentItems,"ttttttttttttttt")
   const pageCount = Math.ceil(products.length / itemsPerPage);
 
-  const handlePageClick = (event) => {
+  const handlePageClick = (event: { selected: number }) => {
     const newOffset = (event.selected * itemsPerPage) % products.length;
     // console.log(
     //   `User requested page number ${event.selected}, which is offset ${newOffset}`

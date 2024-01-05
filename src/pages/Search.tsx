@@ -3,6 +3,7 @@ import { useForm, useWatch } from "react-hook-form";
 
 import { useSelector } from "react-redux";
 import useProduc from "../hooks/useProduc";
+import { RootState } from "../redux/store";
 
 type Inputs = {
   example: string;
@@ -15,8 +16,8 @@ type Inputs = {
 
 export default function Search() {
   const { setDeneme } = useProduc();
-  const { products, categories, brands, sorts } = useSelector(
-    (state) => state.products
+  const {  categories, brands, sorts } = useSelector(
+    (state:RootState) => state.products
   );
   // console.log(products, categories, brands, sorts, "app");
 

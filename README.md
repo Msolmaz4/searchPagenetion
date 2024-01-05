@@ -3,7 +3,9 @@
 npm i react-paginate
 
 
-    "axios": ,
+    
+    ![tyscriptSearch](https://github.com/Msolmaz4/searchPagenetion/assets/86296198/accab906-8c63-4c7b-9115-1c2b2b83b7c5)
+     "axios": ,
     "react": ,
     "react-dom": ,
     "react-hook-form:,
